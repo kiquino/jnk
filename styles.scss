@@ -107,7 +107,15 @@ header{
 .talleres{
     display:flex;
     flex-direction: column;
-    margin: 1em 1em;
+    padding: 1em 0em;
     width: 100%;
     height: auto;
+    .talleres-header{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        min-height: 12em;
+        background-color: orange;
+    }
 }

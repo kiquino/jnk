@@ -180,8 +180,23 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1em 1em;
+  padding: 1em 0em;
   width: 100%;
   height: auto;
+}
+
+.talleres .talleres-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  min-height: 12em;
+  background-color: orange;
 }
 /*# sourceMappingURL=styles.css.map */
