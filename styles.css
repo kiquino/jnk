@@ -153,7 +153,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto;
-  border-left: 2px solid orange;
+  border-left: 3px solid orange;
   padding-left: 1em;
 }
 
@@ -169,7 +169,7 @@ header {
   border-left: none;
   padding-left: none;
   padding-right: 1em;
-  border-right: 2px solid orange;
+  border-right: 3px solid orange;
 }
 
 .talleres {
@@ -198,5 +198,112 @@ header {
       flex-wrap: nowrap;
   min-height: 12em;
   background-color: orange;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.talleres .talleres-header .talleres-header-title {
+  padding-left: 3em;
+  width: 50%;
+  text-align: left;
+  height: 100%;
+  margin: auto 0;
+}
+
+.talleres .talleres-header .talleres-header-title h2 {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  padding-top: 0em;
+  border-top: 3px solid black;
+}
+
+.talleres .talleres-part1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 1.5em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.talleres .talleres-part1 .talleres-part1-text {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+.talleres .talleres-part1 .talleres-part1-extra {
+  width: 20%;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.talleres .talleres-part1 .talleres-part1-extra .talleres-contenido {
+  width: 100%;
+}
+
+.talleres .talleres-part1 .talleres-part1-extra .talleres-beneficios {
+  padding-right: 1em;
+  border-right: 3px solid orange;
+}
+
+.talleres .talleres-part2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.talleres .talleres-part2 .talleres-lista {
+  text-align: left;
+  width: 30%;
+  border-left: 3px solid orange;
+  padding-left: 1em;
+}
+
+.talleres .talleres-part2 .talleres-pronto {
+  width: 20%;
+  text-align: center;
+}
+
+.talleres .talleres-part2 .talleres-pronto h3 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.talleres .talleres-part2 .talleres-pronto h3:nth-child(2) {
+  border-bottom: 3px solid orange;
 }
 /*# sourceMappingURL=styles.css.map */

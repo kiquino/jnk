@@ -88,7 +88,7 @@ header{
             text-align: left;
             flex-direction: column;
             margin: 0 auto;
-            border-left: 2px solid orange;
+            border-left: 3px solid orange;
             padding-left: 1em;
             h2{
                 margin-bottom: 1em;
@@ -99,7 +99,7 @@ header{
                 border-left: none;
                 padding-left: none;
                 padding-right: 1em;
-                border-right: 2px solid orange;
+                border-right: 3px solid orange;
             }
         }
     }
@@ -117,5 +117,76 @@ header{
         flex-wrap: nowrap;
         min-height: 12em;
         background-color: orange;
+        justify-content: space-between;
+        .talleres-header-title{
+            padding-left: 3em;
+            width: 50%;
+            text-align: left;
+            height: 100%;
+            margin: auto 0;
+            h2{
+                width: min-content;
+                padding-top: 0em;
+                border-top: 3px solid black;
+            }
+        }
     }
+    .talleres-part1{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 1.5em;
+        justify-content: space-between;
+        .talleres-part1-text{
+            width: 60%;
+            display: flex;
+            text-align: left;
+        }
+        .talleres-part1-extra{
+            width: 20%;
+            text-align: right;
+            display: flex;
+            height: auto;
+            flex-direction: column;
+            justify-content: space-between;
+            .talleres-contenido{
+                
+                width: 100%;
+            }
+            .talleres-beneficios{
+                padding-right: 1em;
+                border-right: 3px solid orange;
+            }
+        }
+    }
+    .talleres-part2{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+        justify-content: space-between;
+        .talleres-lista{
+            text-align: left;
+            width: 30%;
+            border-left: 3px solid orange;
+            padding-left: 1em;
+        }
+        .talleres-pronto{
+            width: 20%;
+            text-align: center;
+            h3{
+                width: max-content;
+                &:nth-child(2){
+                    border-bottom: 3px solid orange;
+                }
+            }
+          
+        }
+    }
+}
+.testimonial{
+    
 }
