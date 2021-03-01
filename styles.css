@@ -5,6 +5,56 @@
           box-sizing: border-box;
 }
 
+.nav-color {
+  background-color: orange;
+}
+
+.navbar-nav {
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  overflow-x: hidden;
+}
+
+.navbar-nav li {
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.navbar-nav li a {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+.jumbotron {
+  min-height: 28em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+}
+
+.jumbotron h2 {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 40%;
+  left: 20%;
+  text-align: center;
+}
+
 header {
   width: 100%;
   display: -webkit-box;
@@ -15,7 +65,11 @@ header {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   height: auto;
-  background-color: orange;
+  background-color: yellow;
+}
+
+.row {
+  --bs-gutter-x:0;
 }
 
 .about {
@@ -32,13 +86,18 @@ header {
 }
 
 .about .mandala {
-  height: 100%;
+  height: auto;
   width: 100%;
   position: absolute;
   top: 0;
-  left: -60%;
-  background-color: orange;
+  left: -10%;
   opacity: 0.3;
+}
+
+.about .mandala img {
+  display: block;
+  width: 50%;
+  height: auto;
 }
 
 .about .contenedor-bio {
