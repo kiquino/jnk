@@ -1,15 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300;400;700&family=Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+$font-text:'Open Sans', sans-serif;
+$font-nav:'Nunito', sans-serif;
+$font-nombre:'Philosopher', sans-serif;
+$naranja:#Ff6600;
+$amarillo:#FFFF99;
+$marron-claro:#Cc9933;
+$marron-regular:#996633;
+$marron-oscuro:#663333;
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .nav-color{
-    background-color: orange;
+    background-color: $marron-claro;
+    width: 100%;
 }
 .navbar-nav{
-    width: 100%;
+    width: 90%;
     justify-content: space-evenly;
     overflow-x: hidden;
+    margin: 0 auto;
     li{
         border-left: 3px solid white;
         border-right: 3px solid white;
@@ -17,7 +31,8 @@
         padding-right: 1.5em;
         a{
             font-size: 1.5em;
-            font-weight: bold;
+            font-family: $font-nav;
+            font-weight: 800;
             color: white;
         }
     }
@@ -28,20 +43,37 @@
     flex-direction: column;
     justify-content: center;
     height: auto;
-    h2{
-        position: absolute;
-        display: flex;
-        top: 40%;
-        left: 20%;
-        text-align: center;
-    }
+   
 }
 header{
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
     height: auto;
-    background-color: yellow;
+    
+}
+.carousel-item{
+    img{
+        height: auto;
+        width: 100%;
+    }
+    .logo-carousel{
+        position: absolute;
+        display: flex;
+        top: 40%;
+        left: 20%;
+       background-size: contain;
+       height: 8em;
+       width: 18em;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-image: url(assets/LOGO/LOGO+REDES.png);
+        
+    }
+    
+}
+.carousel{
+    height: 100%;
 }
 .row{
     --bs-gutter-x:0;
@@ -51,11 +83,16 @@ header{
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
-  height: auto;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(assets/FONDOS_DE_LA_WEB/ELEFANTE_Images/ELEFANTE_ImgID1.png);
   .mandala{
-     
+     display: none;
       height: auto;
       width: 100%;
+      
       position: absolute;
       top: 0;
       left: -10%;
@@ -65,12 +102,13 @@ header{
           display: block;
         width: 50%;
         height: auto;
-        
+        z-index: 2;
+       
 
       }
   }
   .contenedor-bio{
-      background-color: rgb(223, 223, 193);
+     
       width: 100%;
       height: 70%;
       display: flex;
@@ -83,6 +121,30 @@ header{
           padding-top: 5%;
           padding-right: 5%;
           text-align: right;
+          .title-bio{
+              font-size: 6em;
+              font-family: $font-nombre;
+              color: $marron-claro;
+              p{
+                  padding:0;
+              }
+
+          }
+          .sub-bio{
+              width: 100%;
+              h3{  font-family: $font-nombre;
+                font-weight: 700;
+                color: $marron-oscuro;
+                letter-spacing: 1px;
+            }
+            
+          }
+          .text-bio{
+              p{
+                  font-family: $font-text;
+                  text-align: justify;
+              }
+          }
       }
   }
   .contenedor-sobremandalas{
@@ -103,6 +165,7 @@ header{
   }
 }
 .cv{
+    z-index: 3;
     background-color: rgb(214, 214, 255);
     display: flex;
     flex-direction: column;

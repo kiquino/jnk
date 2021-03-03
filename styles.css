@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300;400;700&family=Philosopher&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,15 +9,17 @@
 }
 
 .nav-color {
-  background-color: orange;
+  background-color: #Cc9933;
+  width: 100%;
 }
 
 .navbar-nav {
-  width: 100%;
+  width: 90%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   overflow-x: hidden;
+  margin: 0 auto;
 }
 
 .navbar-nav li {
@@ -26,7 +31,8 @@
 
 .navbar-nav li a {
   font-size: 1.5em;
-  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
   color: white;
 }
 
@@ -45,16 +51,6 @@
   height: auto;
 }
 
-.jumbotron h2 {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  top: 40%;
-  left: 20%;
-  text-align: center;
-}
-
 header {
   width: 100%;
   display: -webkit-box;
@@ -65,7 +61,30 @@ header {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   height: auto;
-  background-color: yellow;
+}
+
+.carousel-item img {
+  height: auto;
+  width: 100%;
+}
+
+.carousel-item .logo-carousel {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 40%;
+  left: 20%;
+  background-size: contain;
+  height: 8em;
+  width: 18em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(assets/LOGO/LOGO+REDES.png);
+}
+
+.carousel {
+  height: 100%;
 }
 
 .row {
@@ -82,10 +101,15 @@ header {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   width: 100%;
-  height: auto;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(assets/FONDOS_DE_LA_WEB/ELEFANTE_Images/ELEFANTE_ImgID1.png);
 }
 
 .about .mandala {
+  display: none;
   height: auto;
   width: 100%;
   position: absolute;
@@ -98,10 +122,10 @@ header {
   display: block;
   width: 50%;
   height: auto;
+  z-index: 2;
 }
 
 .about .contenedor-bio {
-  background-color: #dfdfc1;
   width: 100%;
   height: 70%;
   display: -webkit-box;
@@ -122,6 +146,32 @@ header {
   padding-top: 5%;
   padding-right: 5%;
   text-align: right;
+}
+
+.about .contenedor-bio .text-box-bio .title-bio {
+  font-size: 6em;
+  font-family: "Philosopher", sans-serif;
+  color: #Cc9933;
+}
+
+.about .contenedor-bio .text-box-bio .title-bio p {
+  padding: 0;
+}
+
+.about .contenedor-bio .text-box-bio .sub-bio {
+  width: 100%;
+}
+
+.about .contenedor-bio .text-box-bio .sub-bio h3 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  color: #663333;
+  letter-spacing: 1px;
+}
+
+.about .contenedor-bio .text-box-bio .text-bio p {
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
 }
 
 .about .contenedor-sobremandalas {
@@ -149,6 +199,7 @@ header {
 }
 
 .cv {
+  z-index: 3;
   background-color: #d6d6ff;
   display: -webkit-box;
   display: -ms-flexbox;

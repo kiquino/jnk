@@ -9,21 +9,48 @@
     <meta name="designer" content="DiegoVillegas" />
 
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <header>
-      <div class="row">
-        <div class="jumbotron jumbotron-fluid">
-          <div class="container bg-header">
-            <h2>Julieta Nahum</h2>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="logo-carousel"></div>
+            <img src="assets/BANNER_SUPERIOR/1.png" alt="" srcset="" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/BANNER_SUPERIOR/2.png" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/BANNER_SUPERIOR/3.png" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/BANNER_SUPERIOR/4.png" alt="" />
           </div>
         </div>
       </div>
+
       <div class="row">
         <nav class="navbar navbar-expand-lg nav-color">
           <div class="container-fluid">
@@ -42,12 +69,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
               <ul class="navbar-nav ml-auto text-center">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Inicio</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Bio</a>
+                  <a class="nav-link" href="#">BIO</a>
                 </li>
                 <li class="nav-item">
                   <a
@@ -64,7 +86,7 @@
                     href="#"
                     tabindex="-1"
                     aria-disabled="true"
-                    >Arte</a
+                    >ARTE</a
                   >
                 </li>
                 <li class="nav-item">
@@ -73,7 +95,7 @@
                     href="#"
                     tabindex="-1"
                     aria-disabled="true"
-                    >Cursos</a
+                    >CURSOS</a
                   >
                 </li>
                 <li class="nav-item">
@@ -82,7 +104,7 @@
                     href="#"
                     tabindex="-1"
                     aria-disabled="true"
-                    >Contacto</a
+                    >CONTACTO</a
                   >
                 </li>
               </ul>
@@ -98,18 +120,32 @@
 
       <div class="contenedor-bio">
         <div class="text-box-bio">
-          <div class="title-bio"><h1>Bio</h1></div>
-          <div class="sub-bio"><h3>sobre el bio</h3></div>
+          <div class="title-bio"><p>Bio</p></div>
+          <div class="sub-bio"><h3>Julieta Nahúm de Kröhnert</h3></div>
           <div class="text-bio">
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Similique provident iste beatae cupiditate? Itaque accusantium ea
-              iusto tempora quo. Dolore neque omnis perferendis sunt incidunt
-              non eligendi, debitis inventore? Possimus! Placeat natus
-              consequuntur eius! Unde esse provident explicabo molestias quos
-              maxime repellendus deleniti veritatis repellat nostrum enim
-              tempore quas est illum, consequuntur doloremque officia nemo velit
-              odio delectus ipsum et.
+              Me llaman Julieta, pero no me lo creo. Desde que tengo memoria
+              busco a aquella que fui, a la que soy y a la que seguiré siendo.
+              Caminando mi búsqueda, trato de hacer realidad en mi vida el
+              concepto artístico que dice: “Unidad dentro de la variedad y
+              variedad dentro de la unidad” extendiéndolo a todos los seres,
+              humanos incluidos. <br />
+              En mi búsqueda hice hasta hoy, año 2020, 27 viajes a la tierra
+              Santa de India y tuve la gracia de conocer a muchos grandes seres,
+              de esos que caminan en silencio, sin hacer el más mínimo ruido,
+              curando a su paso... <br />
+              Entre todos ellos uno marcó definitivamente mi vida hace ya 30
+              años y me siento más que afortunada de poder traducir su obra de
+              forma escrita y ser intérprete de sus conferencias. Con él aprendí
+              lo que sé de meditación y profundicé los aspectos de estudio y
+              servicio que también aprendí de mis padres. <br />
+              Ahora trato de compartir los conocimientos acumulados en tantos y
+              tantos viajes y en incontables años de aprendizaje. <br />
+              Te invito a seguir buscándonos juntos por medio del silencio
+              interno, los sonidos sagrados y su expresión en la materia. La
+              unidad en la variedad y la variedad en la unidad no es nada que
+              deba lograrse, es algo que debemos poder percibir. Sólo con los
+              ojos del alma podremos hacerlo. Que juntos podamos lograrlo.
             </p>
           </div>
         </div>
@@ -231,18 +267,14 @@
     <footer></footer>
 
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
+
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
   </body>
