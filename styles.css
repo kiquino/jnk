@@ -275,7 +275,10 @@ header {
 
 .cv {
   z-index: 3;
-  background-color: #d6d6ff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CV.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,7 +324,36 @@ header {
 }
 
 .cv .contenedor-cv .contenedor-items-cv .cv-item {
-  margin: 1em 0;
+  margin: 0.8em 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.cv .contenedor-cv .contenedor-items-cv .cv-item :nth-child(1) {
+  color: #663333;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.cv .contenedor-cv .contenedor-items-cv .cv-item :nth-child(2) {
+  color: #Cc9933;
+}
+
+.cv .contenedor-cv .download-cv a {
+  text-decoration: none;
+}
+
+.cv .contenedor-cv .download-cv a h1 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: bolder;
+  color: #663333;
+  margin-bottom: 0;
+  line-height: .8em;
+}
+
+.cv .contenedor-cv .download-cv a h3 {
+  font-family: "Nunito", sans-serif;
+  font-weight: bolder;
+  color: #Ff6600;
 }
 
 .cv .contenedor-cv .contenedor-extra-cv {

@@ -238,7 +238,10 @@ header{
 }
 .cv{
     z-index: 3;
-    background-color: rgb(214, 214, 255);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CV.jpg);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -257,8 +260,36 @@ header{
             width: 90%;
             justify-content: flex-start;
             .cv-item{
-                margin:1em 0;
+                margin:0.8em 0;
+                font-family: $font-text;
+               
+               :nth-child(1){
+                   color: $marron-oscuro;
+                   font-weight: bold;
+                   margin-bottom: 0;
+               }
+                :nth-child(2){
+                    color: $marron-claro;
+                }
             }
+        }
+        .download-cv{
+            a{
+                text-decoration: none;
+                h1{
+                    font-family: $font-nombre;
+                    font-weight: bolder;
+                    color: $marron-oscuro;
+                    margin-bottom: 0;
+                    line-height: .8em;
+                }
+                h3{
+                    font-family: $font-nav;
+                    font-weight: bolder;
+                    color: $naranja;
+                }
+            }
+            
         }
         .contenedor-extra-cv{
             width: 90%;
