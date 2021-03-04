@@ -18,6 +18,7 @@ $marron-oscuro:#663333;
 .nav-color{
     background-color: $marron-claro;
     width: 100%;
+    padding:0.5em 0;
 }
 .navbar-nav{
     width: 90%;
@@ -34,6 +35,7 @@ $marron-oscuro:#663333;
             font-family: $font-nav;
             font-weight: 800;
             color: white;
+            
         }
     }
 }
@@ -72,11 +74,34 @@ header{
     }
     
 }
+.container{
+    width: 100%;
+    .row{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+        a{
+            width: 100px;
+            height: 100px;
+            margin: 1rem 1em;
+            overflow: hidden;
+            img{
+                width: 100px;
+                height: auto;
+                
+            }
+        }
+    }
+}
 .carousel{
     height: 100%;
 }
 .row{
     --bs-gutter-x:0;
+    margin-right: 0;
+    margin-left: 0;
 }
 .about{
   position: relative;
@@ -86,20 +111,29 @@ header{
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  overflow-y: hidden;
+  background-size: cover;
   background-image: url(assets/FONDOS_DE_LA_WEB/ELEFANTE_Images/ELEFANTE_ImgID1.png);
   .mandala{
-     display: none;
+      display: block;
+     min-height: 1200px;
+        
+      /* Set up proportionate scaling */
+      width: 50%;
       height: auto;
-      width: 100%;
       
+        
+      /* Set up positioning */
       position: absolute;
       top: 0;
-      left: -10%;
-     
-      opacity: 0.3;
+      left: 0;
+     background-position: left;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-image: url(assets/FONDOS_DE_LA_WEB/ELEFANTE.png);
+
       img{
-          display: block;
+          display: none;
         width: 50%;
         height: auto;
         z-index: 2;
@@ -117,7 +151,7 @@ header{
       .text-box-bio{
           height: 100%;
          
-          width: 30%;
+          width: 50%;
           padding-top: 5%;
           padding-right: 5%;
           text-align: right;
@@ -127,6 +161,7 @@ header{
               color: $marron-claro;
               p{
                   padding:0;
+                  line-height: 4rem;
               }
 
           }
@@ -143,12 +178,15 @@ header{
               p{
                   font-family: $font-text;
                   text-align: justify;
+                 
+                     
+                  
               }
           }
       }
   }
   .contenedor-sobremandalas{
-    background-color: rgb(221, 151, 119);
+    background-color: $marron-claro;
     width: 100%;
     height: 30%;
     display: flex;
@@ -156,11 +194,45 @@ header{
     justify-content: flex-end;
     .text-box-bio{
         height: 100%;
-       
-        width: 60%;
+       font-family: $font-text;
+        width: 50%;
         padding-top: 5%;
+        
         padding-right: 5%;
-        text-align: right;
+        text-align: justify;
+        .title-mandalas{
+            p{
+                font-size: 8em;
+                font-family: $font-nombre;
+                color: $marron-oscuro;
+                font-weight: bolder;
+                line-height:4rem;
+                sub{
+                    font-size: 8em;
+                font-family: $font-nombre;
+                color: $marron-oscuro;
+                font-weight: bolder;
+                line-height:4rem;
+                text-align: right;
+                margin-left: auto; 
+
+                }
+            }
+        }
+        .text-mandala{
+            p{
+                font-size:1.1rem;
+            }
+            sub{
+                font-size: 8em;
+                font-family: $font-nombre;
+                color: $marron-oscuro;
+                font-weight: bolder;
+                line-height:4rem;
+                text-align: right;
+                margin-left: auto;
+            }
+        }
     }
   }
 }
