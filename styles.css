@@ -302,7 +302,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -370,12 +370,25 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto;
-  border-left: 3px solid orange;
+  font-family: "Nunito", sans-serif;
+  border-left: 3px solid #Ff6600;
   padding-left: 1em;
 }
 
 .cv .contenedor-cv .contenedor-extra-cv h2 {
   margin-bottom: 1em;
+  color: #Ff6600;
+}
+
+.cv .contenedor-cv .contenedor-extra-cv a h3 {
+  font-size: 1.5em;
+  color: #Ff6600;
+}
+
+.cv .contenedor-cv .contenedor-extra-cv a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #Ff6600;
+          text-decoration-color: #Ff6600;
 }
 
 .cv .contenedor-cv .contenedor-extra-cv:nth-child(2) {
