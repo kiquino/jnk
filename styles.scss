@@ -1,242 +1,276 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300;400;700&family=Philosopher&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
-$font-text:'Open Sans', sans-serif;
-$font-nav:'Nunito', sans-serif;
-$font-nombre:'Philosopher', sans-serif;
+$font-text:'Open Sans',
+sans-serif;
+$font-nav:'Nunito',
+sans-serif;
+$font-nombre:'Philosopher',
+sans-serif;
 $naranja:#Ff6600;
 $amarillo:#FFFF99;
 $marron-claro:#Cc9933;
 $marron-regular:#996633;
 $marron-oscuro:#663333;
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.nav-color{
+
+.nav-color {
     background-color: $marron-claro;
     width: 100%;
-    padding:0.5em 0;
+    padding: 0.5em 0;
 }
-.navbar-nav{
+
+.navbar-nav {
     width: 90%;
     justify-content: space-evenly;
     overflow-x: hidden;
     margin: 0 auto;
-    li{
+
+    li {
         border-left: 3px solid white;
         border-right: 3px solid white;
         padding-left: 1.5em;
         padding-right: 1.5em;
-        a{
+
+        a {
             font-size: 1.5em;
             font-family: $font-nav;
             font-weight: 800;
             color: white;
-            
+
         }
     }
 }
-.jumbotron{
+
+.jumbotron {
     min-height: 28em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: auto;
-   
+
 }
-header{
+
+header {
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
     height: auto;
-    
+
 }
-.carousel-item{
-    img{
+
+.carousel-item {
+    img {
         height: auto;
         width: 100%;
     }
-    .logo-carousel{
+
+    .logo-carousel {
         position: absolute;
         display: flex;
         top: 40%;
         left: 20%;
-       background-size: contain;
-       height: 8em;
-       width: 18em;
-       background-position: center;
-       background-repeat: no-repeat;
-       background-image: url(assets/LOGO/LOGO+REDES.png);
-        
+        background-size: contain;
+        height: 8em;
+        width: 18em;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(assets/LOGO/LOGO+REDES.png);
+
     }
-    
+
 }
-.container{
+
+.container {
     width: 100%;
-    .row{
+
+    .row {
         width: 90%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         margin: 0 auto;
-        a{
+
+        a {
             width: 100px;
             height: 100px;
             margin: 1rem 1em;
             overflow: hidden;
-            img{
+
+            img {
                 width: 100px;
                 height: auto;
-                
+
             }
         }
     }
 }
-.carousel{
+
+.carousel {
     height: 100%;
 }
-.row{
-    --bs-gutter-x:0;
+
+.row {
+    --bs-gutter-x: 0;
     margin-right: 0;
     margin-left: 0;
 }
-.about{
-  position: relative;
-  display: flex;
-  flex-flow: column nowrap;
-  width: 100%;
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow-y: hidden;
-  background-size: cover;
-  background-image: url(assets/FONDOS_DE_LA_WEB/ELEFANTE_Images/ELEFANTE_ImgID1.png);
-  .mandala{
-      display: block;
-     min-height: 1200px;
-        
-      /* Set up proportionate scaling */
-      width: 50%;
-      height: auto;
-      
-        
-      /* Set up positioning */
-      position: absolute;
-      top: 0;
-      left: 0;
-     background-position: left;
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-image: url(assets/FONDOS_DE_LA_WEB/ELEFANTE.png);
 
-      img{
-          display: none;
+.about {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    background-size: cover;
+    background-image: url(assets/FONDOS_DE_LA_WEB/ELEFANTE_Images/ELEFANTE_ImgID1.png);
+
+    .mandala {
+        display: block;
+        min-height: 1200px;
+
+
         width: 50%;
         height: auto;
-        z-index: 2;
-       
 
-      }
-  }
-  .contenedor-bio{
-     
-      width: 100%;
-      height: 70%;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      .text-box-bio{
-          height: 100%;
-         
-          width: 50%;
-          padding-top: 5%;
-          padding-right: 5%;
-          text-align: right;
-          .title-bio{
-              font-size: 6em;
-              font-family: $font-nombre;
-              color: $marron-claro;
-              p{
-                  padding:0;
-                  line-height: 4rem;
-              }
 
-          }
-          .sub-bio{
-              width: 100%;
-              h3{  font-family: $font-nombre;
-                font-weight: 700;
-                color: $marron-oscuro;
-                letter-spacing: 1px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(assets/FONDOS_DE_LA_WEB/ELEFANTE.png);
+
+        img {
+            display: none;
+            width: 50%;
+            height: auto;
+            z-index: 2;
+
+
+        }
+    }
+
+    .contenedor-bio {
+
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        .text-box-bio {
+            height: 100%;
+
+            width: 50%;
+            padding-top: 5%;
+            padding-right: 5%;
+            text-align: right;
+
+            .title-bio {
+                font-size: 6em;
+                font-family: $font-nombre;
+                color: $marron-claro;
+
+                p {
+                    padding: 0;
+                    line-height: 4rem;
+                }
+
             }
-            
-          }
-          .text-bio{
-              p{
-                  font-family: $font-text;
-                  text-align: justify;
-                 
-                     
-                  
-              }
-          }
-      }
-  }
-  .contenedor-sobremandalas{
-    background-color: $marron-claro;
-    width: 100%;
-    height: 30%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    .text-box-bio{
-        height: 100%;
-       font-family: $font-text;
-        width: 50%;
-        padding-top: 5%;
-        
-        padding-right: 5%;
-        text-align: justify;
-        .title-mandalas{
-            p{
-                font-size: 8em;
-                font-family: $font-nombre;
-                color: $marron-oscuro;
-                font-weight: bolder;
-                line-height:4rem;
-                sub{
-                    font-size: 8em;
-                font-family: $font-nombre;
-                color: $marron-oscuro;
-                font-weight: bolder;
-                line-height:4rem;
-                text-align: right;
-                margin-left: auto; 
+
+            .sub-bio {
+                width: 100%;
+
+                h3 {
+                    font-family: $font-nombre;
+                    font-weight: 700;
+                    color: $marron-oscuro;
+                    letter-spacing: 1px;
+                }
+
+            }
+
+            .text-bio {
+                p {
+                    font-family: $font-text;
+                    text-align: justify;
+
+
 
                 }
             }
         }
-        .text-mandala{
-            p{
-                font-size:1.1rem;
+    }
+
+    .contenedor-sobremandalas {
+        background-color: $marron-claro;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        .text-box-bio {
+            height: 100%;
+            font-family: $font-text;
+            width: 50%;
+            padding-top: 5%;
+
+            padding-right: 5%;
+            text-align: justify;
+
+            .title-mandalas {
+                p {
+                    font-size: 8em;
+                    font-family: $font-nombre;
+                    color: $marron-oscuro;
+                    font-weight: bolder;
+                    line-height: 4rem;
+
+                    sub {
+                        font-size: 8em;
+                        font-family: $font-nombre;
+                        color: $marron-oscuro;
+                        font-weight: bolder;
+                        line-height: 4rem;
+                        text-align: right;
+                        margin-left: auto;
+
+                    }
+                }
             }
-            sub{
-                font-size: 8em;
-                font-family: $font-nombre;
-                color: $marron-oscuro;
-                font-weight: bolder;
-                line-height:4rem;
-                text-align: right;
-                margin-left: auto;
+
+            .text-mandala {
+                p {
+                    font-size: 1.1rem;
+                }
+
+                sub {
+                    font-size: 8em;
+                    font-family: $font-nombre;
+                    color: $marron-oscuro;
+                    font-weight: bolder;
+                    line-height: 4rem;
+                    text-align: right;
+                    margin-left: auto;
+                }
             }
         }
     }
-  }
 }
-.cv{
+
+.cv {
     z-index: 3;
     background-position: center;
     background-repeat: no-repeat;
@@ -248,50 +282,64 @@ header{
     padding: 5% 3%;
     height: auto;
     justify-content: center;
-    .contenedor-cv{
+
+    .contenedor-cv {
         display: flex;
         flex-direction: row;
         width: 85%;
         margin: 0 auto;
         justify-content: center;
-        .contenedor-items-cv{
+
+        .contenedor-items-cv {
             display: flex;
             flex-direction: column;
             width: 90%;
             justify-content: flex-start;
-            .cv-item{
-                margin:0.8em 0;
-                font-family: $font-text;
-               
-               :nth-child(1){
-                   color: $marron-oscuro;
-                   font-weight: bold;
-                   margin-bottom: 0;
-               }
-                :nth-child(2){
+
+            .cv-item {
+                margin: 0.8em 0;
+                font-family: $font-nav;
+
+                :nth-child(1) {
+                    color: $marron-oscuro;
+                    font-weight: bold;
+                    margin-bottom: 0;
+                }
+
+                :nth-child(2) {
                     color: $marron-claro;
                 }
             }
         }
-        .download-cv{
-            a{
+
+        .download-cv {
+            a {
                 text-decoration: none;
-                h1{
+
+                &:hover {
+                    text-decoration: underline;
+                    text-decoration-color: $naranja;
+                    text-decoration-thickness: 3px;
+                }
+
+                h1 {
                     font-family: $font-nombre;
                     font-weight: bolder;
                     color: $marron-oscuro;
                     margin-bottom: 0;
                     line-height: .8em;
                 }
-                h3{
+
+                h3 {
                     font-family: $font-nav;
                     font-weight: bolder;
                     color: $naranja;
                 }
             }
-            
+
         }
-        .contenedor-extra-cv{
+
+        .contenedor-extra-cv {
             width: 90%;
             display: flex;
             justify-content: flex-start;
@@ -301,115 +349,242 @@ header{
             font-family: $font-nav;
             border-left: 3px solid $naranja;
             padding-left: 1em;
-            h2{
+
+            h2 {
                 margin-bottom: 1em;
                 color: $naranja;
 
             }
-            a{
-                 h3{
-                font-size: 1.5em;
-                color: $naranja;
-                    }
-                    &:hover{
+
+            a {
+                h3 {
+                    font-size: 1.5em;
+                    color: $naranja;
+                }
+
+                &:hover {
                     text-decoration: underline;
-                    text-decoration-color: $naranja;}
-             }
-           
-            &:nth-child(2){
+                    text-decoration-color: $naranja;
+                }
+            }
+
+            &:nth-child(2) {
                 justify-content: flex-end;
                 text-align: right;
                 border-left: none;
                 padding-left: none;
                 padding-right: 1em;
-                border-right: 3px solid orange;
+                border-right: 3px solid $naranja;
             }
         }
     }
 }
-.talleres{
-    display:flex;
+
+.talleres {
+    display: flex;
     flex-direction: column;
-    padding: 1em 0em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CURSO_TALLER.jpg);
     width: 100%;
     height: auto;
-    .talleres-header{
+    padding-bottom: 5em;
+
+    .talleres-header {
         width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         min-height: 12em;
-        background-color: orange;
+        background-color: $marron-claro;
         justify-content: space-between;
-        .talleres-header-title{
-            padding-left: 3em;
-            width: 50%;
-            text-align: left;
-            height: 100%;
-            margin: auto 0;
-            h2{
+
+        .talleres-header-title {
+            width: 40%;
+            margin-left: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3rem 0;
+
+            p {
+                font-size: 4rem;
+                width: 50%;
+                font-family: $font-nombre;
+                font-weight: 600;
+                color: white;
+            }
+
+            h2 {
+                text-align: left;
                 width: min-content;
                 padding-top: 0em;
                 border-top: 3px solid black;
+
             }
         }
+
+        .talleres-header-img {
+            background-color: $marron-regular;
+            height: auto;
+            width: 50%;
+        }
     }
-    .talleres-part1{
+
+    .talleres-part1 {
         display: flex;
         flex-direction: row;
-        width: 90%;
+        width: 85%;
         height: auto;
         margin: 0 auto;
-        margin-top: 1.5em;
+        margin-top: 3em;
         justify-content: space-between;
-        .talleres-part1-text{
-            width: 60%;
+
+        .talleres-part1-text {
+
+            flex-direction: column;
+
+
+            .talleres-part1-title {
+                p {
+                    font-family: $font-nombre;
+                    color: $marron-oscuro;
+                    font-size: 3em;
+                    line-height: 1em;
+                }
+
+            }
+
+            p {
+                color: $marron-claro;
+                font-family: $font-nav;
+            }
+
+            b {
+                color: $marron-regular;
+                font-family: $font-nav;
+            }
+
+            width: 50%;
             display: flex;
             text-align: left;
         }
-        .talleres-part1-extra{
-            width: 20%;
+
+        .talleres-part1-extra {
+            width: 35%;
             text-align: right;
             display: flex;
             height: auto;
             flex-direction: column;
             justify-content: space-between;
-            .talleres-contenido{
-                
+
+            .talleres-contenido {
+                h1 {
+                    color: $marron-regular;
+                    font-family: $font-nav;
+                    font-weight: bold;
+                }
+
+                a {
+                    text-decoration-color: $naranja;
+
+
+
+                    h3 {
+                        color: $naranja;
+                        font-family: $font-nav;
+                    }
+                }
+
+
+                margin-bottom:2em;
+            }
+
+            .talleres-contenido {
+
                 width: 100%;
             }
-            .talleres-beneficios{
+
+            .talleres-beneficios {
                 padding-right: 1em;
-                border-right: 3px solid orange;
+                border-right: 3px solid $naranja;
+                font-family: $font-nav;
+
+                h1 {
+                    color: $marron-claro;
+
+                    font-size: 2em;
+
+                }
+
+                p {
+                    line-height: .5em;
+                    color: $marron-regular;
+                }
+
             }
         }
     }
-    .talleres-part2{
+
+    .talleres-part2 {
         display: flex;
         flex-direction: row;
-        width: 90%;
+        width: 85%;
         margin: 0 auto;
         height: auto;
         justify-content: space-between;
-        .talleres-lista{
+
+        .talleres-lista {
             text-align: left;
             width: 30%;
-            border-left: 3px solid orange;
+            border-left: 3px solid $naranja;
             padding-left: 1em;
+            font-family: $font-nav;
+            line-height: 1.5em;
+
+            p {
+                margin: 0;
+                padding: 0;
+                color: $marron-claro;
+
+            }
+
+            b {
+
+                color: $marron-regular;
+            }
         }
-        .talleres-pronto{
+
+        .talleres-pronto {
             width: 20%;
             text-align: center;
-            h3{
+
+            h3 {
                 width: max-content;
-                &:nth-child(2){
-                    border-bottom: 3px solid orange;
+
+                &:nth-child(2) {
+                    border-bottom: 3px solid $naranja;
                 }
             }
-          
+
         }
     }
 }
-.testimonial{
-    
+
+.testimonial {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    height: auto;
+    min-height: 10em;
+}
+
+.carousel-indicators {
+    li {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
 }

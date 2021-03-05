@@ -120,7 +120,7 @@ header {
 }
 
 .row {
-  --bs-gutter-x:0;
+  --bs-gutter-x: 0;
   margin-right: 0;
   margin-left: 0;
 }
@@ -146,10 +146,8 @@ header {
 .about .mandala {
   display: block;
   min-height: 1200px;
-  /* Set up proportionate scaling */
   width: 50%;
   height: auto;
-  /* Set up positioning */
   position: absolute;
   top: 0;
   left: 0;
@@ -325,7 +323,7 @@ header {
 
 .cv .contenedor-cv .contenedor-items-cv .cv-item {
   margin: 0.8em 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .cv .contenedor-cv .contenedor-items-cv .cv-item :nth-child(1) {
@@ -340,6 +338,13 @@ header {
 
 .cv .contenedor-cv .download-cv a {
   text-decoration: none;
+}
+
+.cv .contenedor-cv .download-cv a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #Ff6600;
+          text-decoration-color: #Ff6600;
+  text-decoration-thickness: 3px;
 }
 
 .cv .contenedor-cv .download-cv a h1 {
@@ -399,7 +404,7 @@ header {
   border-left: none;
   padding-left: none;
   padding-right: 1em;
-  border-right: 3px solid orange;
+  border-right: 3px solid #Ff6600;
 }
 
 .talleres {
@@ -410,9 +415,13 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1em 0em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CURSO_TALLER.jpg);
   width: 100%;
   height: auto;
+  padding-bottom: 5em;
 }
 
 .talleres .talleres-header {
@@ -427,26 +436,52 @@ header {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   min-height: 12em;
-  background-color: orange;
+  background-color: #Cc9933;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .talleres .talleres-header .talleres-header-title {
-  padding-left: 3em;
+  width: 40%;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0;
+}
+
+.talleres .talleres-header .talleres-header-title p {
+  font-size: 4rem;
   width: 50%;
-  text-align: left;
-  height: 100%;
-  margin: auto 0;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 600;
+  color: white;
 }
 
 .talleres .talleres-header .talleres-header-title h2 {
+  text-align: left;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
   padding-top: 0em;
   border-top: 3px solid black;
+}
+
+.talleres .talleres-header .talleres-header-img {
+  background-color: #996633;
+  height: auto;
+  width: 50%;
 }
 
 .talleres .talleres-part1 {
@@ -457,25 +492,46 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 90%;
+  width: 85%;
   height: auto;
   margin: 0 auto;
-  margin-top: 1.5em;
+  margin-top: 3em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .talleres .talleres-part1 .talleres-part1-text {
-  width: 60%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: left;
 }
 
+.talleres .talleres-part1 .talleres-part1-text .talleres-part1-title p {
+  font-family: "Philosopher", sans-serif;
+  color: #663333;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+.talleres .talleres-part1 .talleres-part1-text p {
+  color: #Cc9933;
+  font-family: "Nunito", sans-serif;
+}
+
+.talleres .talleres-part1 .talleres-part1-text b {
+  color: #996633;
+  font-family: "Nunito", sans-serif;
+}
+
 .talleres .talleres-part1 .talleres-part1-extra {
-  width: 20%;
+  width: 35%;
   text-align: right;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -491,12 +547,43 @@ header {
 }
 
 .talleres .talleres-part1 .talleres-part1-extra .talleres-contenido {
+  margin-bottom: 2em;
+}
+
+.talleres .talleres-part1 .talleres-part1-extra .talleres-contenido h1 {
+  color: #996633;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+
+.talleres .talleres-part1 .talleres-part1-extra .talleres-contenido a {
+  -webkit-text-decoration-color: #Ff6600;
+          text-decoration-color: #Ff6600;
+}
+
+.talleres .talleres-part1 .talleres-part1-extra .talleres-contenido a h3 {
+  color: #Ff6600;
+  font-family: "Nunito", sans-serif;
+}
+
+.talleres .talleres-part1 .talleres-part1-extra .talleres-contenido {
   width: 100%;
 }
 
 .talleres .talleres-part1 .talleres-part1-extra .talleres-beneficios {
   padding-right: 1em;
-  border-right: 3px solid orange;
+  border-right: 3px solid #Ff6600;
+  font-family: "Nunito", sans-serif;
+}
+
+.talleres .talleres-part1 .talleres-part1-extra .talleres-beneficios h1 {
+  color: #Cc9933;
+  font-size: 2em;
+}
+
+.talleres .talleres-part1 .talleres-part1-extra .talleres-beneficios p {
+  line-height: .5em;
+  color: #996633;
 }
 
 .talleres .talleres-part2 {
@@ -507,7 +594,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   height: auto;
   -webkit-box-pack: justify;
@@ -518,8 +605,20 @@ header {
 .talleres .talleres-part2 .talleres-lista {
   text-align: left;
   width: 30%;
-  border-left: 3px solid orange;
+  border-left: 3px solid #Ff6600;
   padding-left: 1em;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.5em;
+}
+
+.talleres .talleres-part2 .talleres-lista p {
+  margin: 0;
+  padding: 0;
+  color: #Cc9933;
+}
+
+.talleres .talleres-part2 .talleres-lista b {
+  color: #996633;
 }
 
 .talleres .talleres-part2 .talleres-pronto {
@@ -534,6 +633,25 @@ header {
 }
 
 .talleres .talleres-part2 .talleres-pronto h3:nth-child(2) {
-  border-bottom: 3px solid orange;
+  border-bottom: 3px solid #Ff6600;
+}
+
+.testimonial {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  height: auto;
+  min-height: 10em;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=styles.css.map */
