@@ -558,17 +558,42 @@ header {
         }
 
         .talleres-pronto {
-            width: 20%;
-            text-align: center;
+            width: auto;
+            color: $marron-oscuro;
+            margin-top: 2em;
 
-            h3 {
-                width: max-content;
+            p {
+                padding: 0;
+                margin: 0;
+                font-family: $font-nombre;
+                font-size: 2em;
+                text-align: right;
+                line-height: 1em;
 
                 &:nth-child(2) {
+                    letter-spacing: .15em;
                     border-bottom: 3px solid $naranja;
+                }
+
+                &:nth-child(3) {
+                    font-family: $font-nav;
+                    text-align: center;
+                }
+
+                &:nth-child(4) {
+                    font-family: $font-nav;
+                    text-align: center;
                 }
             }
 
+            .muy-pronto {
+                width: auto;
+                height: 4em;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-image: url(assets/LOGO/MUY_PRONTO.svg);
+            }
         }
     }
 }

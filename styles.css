@@ -622,18 +622,42 @@ header {
 }
 
 .talleres .talleres-part2 .talleres-pronto {
-  width: 20%;
+  width: auto;
+  color: #663333;
+  margin-top: 2em;
+}
+
+.talleres .talleres-part2 .talleres-pronto p {
+  padding: 0;
+  margin: 0;
+  font-family: "Philosopher", sans-serif;
+  font-size: 2em;
+  text-align: right;
+  line-height: 1em;
+}
+
+.talleres .talleres-part2 .talleres-pronto p:nth-child(2) {
+  letter-spacing: .15em;
+  border-bottom: 3px solid #Ff6600;
+}
+
+.talleres .talleres-part2 .talleres-pronto p:nth-child(3) {
+  font-family: "Nunito", sans-serif;
   text-align: center;
 }
 
-.talleres .talleres-part2 .talleres-pronto h3 {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+.talleres .talleres-part2 .talleres-pronto p:nth-child(4) {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
 }
 
-.talleres .talleres-part2 .talleres-pronto h3:nth-child(2) {
-  border-bottom: 3px solid #Ff6600;
+.talleres .talleres-part2 .talleres-pronto .muy-pronto {
+  width: auto;
+  height: 4em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(assets/LOGO/MUY_PRONTO.svg);
 }
 
 .testimonial {
