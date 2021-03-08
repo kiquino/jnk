@@ -17,6 +17,7 @@ $marron-oscuro:#663333;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .nav-color {
@@ -119,6 +120,73 @@ header {
     --bs-gutter-x: 0;
     margin-right: 0;
     margin-left: 0;
+}
+
+
+
+.texto-testimonio {
+
+    background-color: $marron-claro;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 3em 4em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .inline {
+        display: flex;
+        flex-direction: row;
+        font-size: 4em;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        line-height: 1rem;
+        width: 50%;
+        margin: 0.5em auto;
+
+
+
+        .quote {
+            font-size: 2em;
+            font-family: $font-nombre;
+        }
+
+        .title-testimonio {
+            font-family: $font-nombre;
+        }
+
+
+    }
+
+    .inline-citacion {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 50%;
+        margin: .5em auto;
+        justify-content: center;
+
+        .quote {
+            font-family: $font-nombre;
+            font-size: 4em;
+            line-height: 1rem;
+        }
+
+        .citacion {
+            font-family: $font-text;
+            font-size: 1.2em;
+        }
+    }
+
+    p {
+        font-family: $font-nav;
+        font-size: 1.1em;
+    }
+
+
 }
 
 .about {
@@ -604,6 +672,21 @@ header {
     flex-flow: column nowrap;
     height: auto;
     min-height: 10em;
+
+    .jumbotron {
+        padding: 0;
+        width: 100%;
+        margin: 0;
+
+        .container {
+            margin: 0;
+            width: 100%;
+            height: auto;
+            padding: 0;
+            display: contents;
+
+        }
+    }
 }
 
 .carousel-indicators {
@@ -611,5 +694,24 @@ header {
         width: 10px;
         height: 10px;
         border-radius: 50%;
+    }
+}
+
+.galeria {
+
+    width: 100%;
+    background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_GALERIA.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 20em;
+
+    .contenedor-contenido-galeria {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        padding: 3em 0;
+
     }
 }
