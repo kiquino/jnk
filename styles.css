@@ -6,6 +6,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .nav-color {
@@ -123,6 +124,89 @@ header {
   --bs-gutter-x: 0;
   margin-right: 0;
   margin-left: 0;
+}
+
+.texto-testimonio {
+  background-color: #Cc9933;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 3em 4em;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.texto-testimonio .inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 4em;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 1rem;
+  width: 50%;
+  margin: 0.5em auto;
+}
+
+.texto-testimonio .inline .quote {
+  font-size: 2em;
+  font-family: "Philosopher", sans-serif;
+}
+
+.texto-testimonio .inline .title-testimonio {
+  font-family: "Philosopher", sans-serif;
+}
+
+.texto-testimonio .inline-citacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 50%;
+  margin: .5em auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.texto-testimonio .inline-citacion .quote {
+  font-family: "Philosopher", sans-serif;
+  font-size: 4em;
+  line-height: 1rem;
+}
+
+.texto-testimonio .inline-citacion .citacion {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em;
+}
+
+.texto-testimonio p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.1em;
 }
 
 .about {
@@ -673,9 +757,45 @@ header {
   min-height: 10em;
 }
 
+.testimonial .jumbotron {
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.testimonial .jumbotron .container {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  display: contents;
+}
+
 .carousel-indicators li {
   width: 10px;
   height: 10px;
   border-radius: 50%;
+}
+
+.galeria {
+  width: 100%;
+  background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_GALERIA.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 20em;
+}
+
+.galeria .contenedor-contenido-galeria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  padding: 3em 0;
 }
 /*# sourceMappingURL=styles.css.map */
