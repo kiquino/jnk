@@ -798,4 +798,129 @@ header {
   margin: 0 auto;
   padding: 3em 0;
 }
+
+.galeria .contenedor-contenido-galeria .cta-galeria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin-left: auto;
+  width: 19em;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: auto;
+}
+
+.galeria .contenedor-contenido-galeria .cta-galeria a .icon-insta {
+  width: 3em;
+  height: 3em;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(assets/LOGO/iconfinder_icon-04_2515843.svg);
+}
+
+.galeria .contenedor-contenido-galeria .cta-galeria a .icon-face {
+  width: 3em;
+  height: 3em;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(assets/LOGO/iconfinder_Rounded_Facebook_svg_5282541.svg);
+}
+
+.galeria .contenedor-contenido-galeria .cta-galeria .logo {
+  height: 3em;
+  width: 10em;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(assets/LOGO/CLAMING.png);
+}
+
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal {
+  width: 50%;
+  height: auto;
+}
+
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row {
+  width: 100%;
+  height: auto;
+}
+
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a {
+  height: auto;
+  width: 100%;
+}
+
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a img {
+  width: 85%;
+  height: auto;
+}
+
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: auto;
+}
+
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery {
+  height: 100%;
+}
+
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container {
+  height: 100%;
+}
+
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a {
+  width: 100%;
+  height: auto;
+  margin: 1em;
+}
+
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a img {
+  width: 100%;
+  height: auto;
+}
 /*# sourceMappingURL=styles.css.map */

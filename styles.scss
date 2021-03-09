@@ -713,5 +713,119 @@ header {
         margin: 0 auto;
         padding: 3em 0;
 
+        .cta-galeria {
+            display: flex;
+            flex-flow: row nowrap;
+            margin-left: auto;
+            width: 19em;
+            justify-content: flex-end;
+            height: auto;
+
+            a {
+                .icon-insta {
+                    width: 3em;
+                    height: 3em;
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+
+                    background-image: url(assets/LOGO/iconfinder_icon-04_2515843.svg);
+                }
+
+                .icon-face {
+                    width: 3em;
+                    height: 3em;
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-image: url(assets/LOGO/iconfinder_Rounded_Facebook_svg_5282541.svg);
+
+                }
+            }
+
+            .logo {
+                height: 3em;
+                width: 10em;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-image: url(assets/LOGO/CLAMING.png);
+            }
+
+
+        }
+
+        .contenedor-grid-galeria {
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            .personal {
+                width: 50%;
+
+                height: auto;
+
+                .lightbox-gallery {
+                    .container {
+                        .row {
+                            width: 100%;
+                            height: auto;
+
+                            a {
+                                height: auto;
+                                width: 100%;
+
+                                img {
+                                    width: 85%;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+            }
+
+            .contenedor-arte {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                flex-wrap: nowrap;
+                height: auto;
+
+                .lightbox-gallery {
+                    height: 100%;
+
+                    .container {
+                        height: 100%;
+
+                        .row {
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+
+                            a {
+                                width: 100%;
+                                height: auto;
+                                margin: 1em;
+
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
     }
 }
