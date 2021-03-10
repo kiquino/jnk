@@ -31,10 +31,10 @@
   padding-right: 1.5em;
 }
 
-.navbar-nav li a {
-  font-size: 1.5em;
+.navbar-nav li .nav-link {
   font-family: "Nunito", sans-serif;
-  font-weight: 800;
+  font-size: 1.4em;
+  font-weight: bolder;
   color: white;
 }
 
@@ -857,24 +857,63 @@ header {
       flex-wrap: nowrap;
 }
 
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal {
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal,
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte {
   width: 50%;
   height: auto;
 }
 
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row {
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row,
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row {
   width: 100%;
   height: auto;
 }
 
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a {
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a,
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a {
   height: auto;
   width: 100%;
 }
 
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a img {
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text,
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a .row-img-text {
+  position: relative;
+}
+
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text .text-row,
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a .row-img-text .text-row {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text .text-row:hover,
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a .row-img-text .text-row:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text .text-row p,
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a .row-img-text .text-row p {
+  font-family: "Philosopher", sans-serif;
+  font-size: 3em;
+  color: black;
+  font-weight: bolder;
+}
+
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text img,
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a .row-img-text img {
   width: 85%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
 }
 
 .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte {

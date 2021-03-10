@@ -43,7 +43,7 @@
     </div>
 
 
-    <nav id="header-nav" class="navbar navbar-expand-lg navbar-dark nav-color">
+    <nav id="header-nav" class="navbar navbar-expand-lg nav-color">
 
       <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -379,8 +379,14 @@
           <div class="lightbox-gallery">
             <div class="container">
               <div class="row personal-photos">
-                <a href="assets/FONDOS_DE_LA_WEB/IMG GALERIA1.jpg" data-lightbox="personal-photos"><img
-                    class="img-fluid" alt="foto de julieta nahúm" src="assets/FONDOS_DE_LA_WEB/IMG GALERIA1.jpg" /></a>
+                <a href="assets/FONDOS_DE_LA_WEB/IMG GALERIA1.jpg" data-lightbox="personal-photos">
+                  <div class="row-img-text">
+                    <div class="text-row">
+                      <p>Personal</p>
+                    </div><img class="img-fluid" alt="foto de julieta nahúm"
+                      src="assets/FONDOS_DE_LA_WEB/IMG GALERIA1.jpg" />
+                  </div>
+                </a>
 
 
               </div>
@@ -392,12 +398,30 @@
           <div class="lightbox-gallery">
             <div class="container">
               <div class="row photos">
-                <a href="assets/FONDOS_DE_LA_WEB/IMG GALERIA2.jpg" data-lightbox="photos"><img class="img-fluid"
-                    alt="foto de julieta nahúm" src="assets/FONDOS_DE_LA_WEB/IMG GALERIA2.jpg" /></a>
-                <a href="assets/FONDOS_DE_LA_WEB/IMG GALERIA3.jpg" data-lightbox="photos"><img class="img-fluid"
-                    src="assets/FONDOS_DE_LA_WEB/IMG GALERIA3.jpg" /></a>
-                <a href="assets/FONDOS_DE_LA_WEB/IMG GALERIA4.jpg" data-lightbox="photos"><img class="img-fluid"
-                    src="assets/FONDOS_DE_LA_WEB/IMG GALERIA4.jpg" /></a>
+                <a href="assets/FONDOS_DE_LA_WEB/IMG GALERIA2.jpg" data-lightbox="photos">
+                  <div class="row-img-text">
+                    <div class="text-row">
+                      <p></p>
+                    </div><img class="img-fluid" alt="foto de julieta nahúm"
+                      src="assets/FONDOS_DE_LA_WEB/IMG GALERIA2.jpg" />
+                  </div>
+                </a>
+                <a href="assets/FONDOS_DE_LA_WEB/IMG GALERIA3.jpg" data-lightbox="photos">
+                  <div class="row-img-text">
+                    <div class="text-row">
+                      <p>Dibujo</p>
+                    </div><img class="img-fluid" alt="foto de julieta nahúm"
+                      src="assets/FONDOS_DE_LA_WEB/IMG GALERIA3.jpg" />
+                  </div>
+                </a>
+                <a href="assets/FONDOS_DE_LA_WEB/IMG GALERIA4.jpg" data-lightbox="photos">
+                  <div class="row-img-text">
+                    <div class="text-row">
+                      <p>Prensa</p>
+                    </div><img class="img-fluid" alt="foto de julieta nahúm"
+                      src="assets/FONDOS_DE_LA_WEB/IMG GALERIA4.jpg" />
+                  </div>
+                </a>
 
               </div>
             </div>
@@ -407,7 +431,15 @@
     </div>
 
   </section>
-  <div id="contacto" class="contacto"></div>
+  <div id="contacto" class="contacto">
+    <div class="header-contacto"></div>
+    <div class="contenedor-form-info">
+      <div class="datos-contacto"></div>
+      <div class="formulario">
+        <form action="" method="post"></form>
+      </div>
+    </div>
+  </div>
   <footer></footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
