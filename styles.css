@@ -159,10 +159,11 @@ header {
   font-size: 4em;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   line-height: 1rem;
+  text-align: center;
   width: 50%;
   margin: 0.5em auto;
 }
@@ -170,6 +171,7 @@ header {
 .texto-testimonio .inline .quote {
   font-size: 2em;
   font-family: "Philosopher", sans-serif;
+  width: auto;
 }
 
 .texto-testimonio .inline .title-testimonio {
@@ -197,6 +199,7 @@ header {
   font-family: "Philosopher", sans-serif;
   font-size: 4em;
   line-height: 1rem;
+  width: auto;
 }
 
 .texto-testimonio .inline-citacion .citacion {
@@ -207,6 +210,8 @@ header {
 .texto-testimonio p {
   font-family: "Nunito", sans-serif;
   font-size: 1.1em;
+  width: 50%;
+  text-align: center;
 }
 
 .about {
@@ -971,5 +976,186 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CONTACTO.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacto .header-contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: right;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  margin-top: 6em;
+}
+
+.contacto .header-contacto .title-header-contacto {
+  font-family: "Philosopher", sans-serif;
+  font-size: 4em;
+  color: #663333;
+  font-weight: bold;
+}
+
+.contacto .header-contacto .title-header-contacto p {
+  margin: 0;
+  line-height: 1em;
+}
+
+.contacto .header-contacto .inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  text-align: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.8em;
+  color: #Ff6600;
+}
+
+.contacto .header-contacto .inline p {
+  margin: 0;
+}
+
+.contacto .header-contacto .inline .header-contacto-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1.5em;
+  margin: auto 0;
+}
+
+.contacto .header-contacto .inline .header-contacto-logos a .logo {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.contacto .header-contacto .inline .header-contacto-logos a .insta {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(assets/LOGO/iconfinder_Rounded_Facebook_svg_5282541.svg);
+}
+
+.contacto .header-contacto .inline .header-contacto-logos a .face {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(assets/LOGO/iconfinder_icon-04_2515843.svg);
+}
+
+.contacto .contenedor-form-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  width: 80%;
+  margin: 1em auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacto .contenedor-form-info .formulario {
+  width: 50%;
+}
+
+.contacto .contenedor-form-info .formulario form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacto .contenedor-form-info .formulario form .input {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 50%;
+  padding: .8em;
+  border-radius: 20px;
+  margin: .7em 0;
+}
+
+.contacto .contenedor-form-info .formulario form .input:nth-child(5) {
+  text-align: center;
+}
+
+.contacto .contenedor-form-info .formulario form .input:nth-child(5):hover {
+  background-color: rgba(145, 145, 145, 0.8);
+}
+
+.contacto .contenedor-form-info .formulario form .input:nth-child(5):hover button {
+  color: white;
+}
+
+.contacto .contenedor-form-info .formulario form .input button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  color: #996633;
+}
+
+.contacto .contenedor-form-info .formulario form .input label {
+  font-family: "Nunito", sans-serif;
+  color: #996633;
+  margin: 0;
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+.contacto .contenedor-form-info .formulario form .input input {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: auto;
+}
+
+.contacto .contenedor-form-info .formulario form .input textarea {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
 }
 /*# sourceMappingURL=styles.css.map */
