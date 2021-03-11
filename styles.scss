@@ -1042,3 +1042,36 @@ header {
         }
     }
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $marron-regular;
+    color: white;
+    font-family: $font-nav;
+    width: 100%;
+    align-items: center;
+    height: auto;
+    padding: 0em 5em;
+
+    p {
+
+        margin: 2em 0;
+    }
+
+    .diseniadora {
+        width: auto;
+        display: flex;
+        flex-flow: row nowrap;
+
+        a {
+            img {
+                height: auto;
+
+                width: 100%;
+            }
+        }
+    }
+
+}
