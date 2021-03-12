@@ -6,8 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Julieta Nahúm</title>
-  <meta name="description" content="" />
-  <meta name="designer" content="DiegoVillegas" />
+  <meta name="description" content="En mi búsqueda hice hasta hoy, año 2020, 27 viajes a la tierra
+  Santa de India y tuve la gracia de conocer a muchos grandes seres,
+  de esos que caminan en silencio, sin hacer el más mínimo ruido,
+  curando a su paso..." />
+  <meta name="designer" content="Mariana LADAGA" />
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
@@ -43,7 +46,7 @@
     </div>
 
 
-    <nav id="header-nav" class="navbar navbar-expand-lg nav-color">
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-dark nav-color">
 
       <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -62,8 +65,14 @@
           <li class="nav-item">
             <a class="nav-link " href="#arte" tabindex="-1" aria-disabled="true">ARTE</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#cursos" tabindex="-1" aria-disabled="true">CURSOS</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="productos" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">CURSOS</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item " href="/cursos.html">MANDALAS</a>
+              <a class="dropdown-item " href="/cursos.html">OTROS</a>
+
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="#contacto" tabindex="-1" aria-disabled="true">CONTACTO</a>
@@ -492,6 +501,20 @@
     integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg=="
     crossorigin="anonymous"></script>
   <script>
+    window.onscroll = function () {
+      myFunction()
+    };
+    var header = document.getElementById("header-nav");
+    var sticky = header.offsetTop + 100;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+
     $("#form").submit(function (event) {
       event.preventDefault();
       $.post("send.php", {
