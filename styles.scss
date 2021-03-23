@@ -34,15 +34,18 @@ $marron-oscuro:#663333;
     width: 100%;
     text-align: center;
     border: none;
-
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    left: -30%;
 
 
     .dropdown-item {
         color: white;
         font-family: $font-nav;
         font-weight: bold;
-        border-left: 3px solid white;
-        border-right: 3px solid white;
+
         border-radius: 0;
         font-size: 1.3rem;
 
@@ -73,13 +76,17 @@ $marron-oscuro:#663333;
 
     }
 }
-
-.nav-link {
-    font-family: $font-nav;
-    font-size: 1.4em;
-    font-weight: bolder;
-    color: rgba(255, 255, 255, 1);
+.navbar-dark{
+    .navbar-nav{
+        .nav-link {
+            font-family: $font-nav;
+            font-size: 1.4em;
+            font-weight: bolder;
+            color: rgba(255, 255, 255, 1);
+        }
+    }
 }
+
 
 .jumbotron {
     min-height: 28em;
